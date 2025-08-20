@@ -1,0 +1,16 @@
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.home input, select{
+    width: 20rem;
+    height: 3rem;
+    margin-block: 0.5rem;
+    font-size: 1.1rem;
+    border-radius: 20px;
+    
+}
