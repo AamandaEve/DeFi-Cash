@@ -71,7 +71,7 @@ function MovimentsList() {
       </ul>
 
       <h2>Nova movimentação</h2>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className={styles.form}>
         <input
           type="text"
           placeholder="Digite o Titulo"

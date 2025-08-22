@@ -50,7 +50,7 @@ function Moviment() {
   }
 
   return (
-    <div className="styles.savehome">
+    <div className={styles.savehome}>
       <form onSubmit={postOnApi}>
         <input
           type="text"
