@@ -1,5 +1,5 @@
-.teste {
-    position: fixed;
+.header {
+  position: fixed;
   display: flex;
   height: 5.7rem;
   width: 100%;
@@ -7,6 +7,8 @@
   color: white;
   align-items: center;
   justify-content: space-between;
+  z-index: 99999;
+  
 }
 .botoes {
     padding-right: 3rem;
@@ -28,7 +30,7 @@
     cursor: pointer;
 }
 
-.teste span {
+.header span {
   color: green;
   font-size: 3rem;
 }
