@@ -1,0 +1,37 @@
+.header {
+  position: fixed;
+  display: flex;
+  height: 5.7rem;
+  width: 100%;
+  background-color: black;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 99999;
+  
+}
+.botoes {
+    padding-right: 3rem;
+  display: flex;
+  gap: 3rem;
+}
+
+.botoes button{
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    width: 8rem;
+    border-radius: 17px;
+    background-color: green;
+    border-color: rgb(11, 70, 11);
+}
+
+.botoes button:hover{
+    background-color: rgb(14, 83, 14);
+    cursor: pointer;
+}
+
+.header span {
+  color: green;
+  font-size: 3rem;
+}
+
