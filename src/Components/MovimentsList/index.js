@@ -59,46 +59,55 @@ function MovimentsList() {
   }
 
   return (
-    <div className={styles.users}>
-      <h1>Lista de Movimentações</h1>
-      <ul>
-        {movimentacoes.map((movimentacoes) => (
-          <li key={movimentacoes.id}>
-            {movimentacoes.name}, {movimentacoes.value},{" "}
-            {movimentacoes.description}
-          </li>
-        ))}
-      </ul>
+    <div className={styles.general}>
+      <div className={styles.square}>
+        <h1>Lista de Movimentações</h1>
+        <ul>
+          {movimentacoes.map((movimentacoes) => (
+            <p key={movimentacoes.id}>
+              {movimentacoes.name}, {movimentacoes.value},{" "}
+              {movimentacoes.description}
+            </p>
+          ))}
+        </ul>
+      </div>
 
-      <h2>Nova movimentação</h2>
-      <form onSubmit={handleSubmit} className={styles.form}>
-        <input
-          type="text"
-          placeholder="Digite o Titulo"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-        />
-        <input
-          type="text"
-          placeholder="Digite a Descrição"
-          value={description}
-          onChange={(e) => setDescription(e.target.value)}
-        />
-        <input
-          type="number"
-          placeholder="Digite o Valor"
-          value={value}
-          onChange={(e) => setValue(e.target.value)}
-        />
-        <select
-          value={transactionType}
-          onChange={(e) => setTransactionType(e.target.value)}
-        >
-          <option value="INCOME">Entrada</option>
-          <option value="EXPENSE">Saída</option>
-        </select>
-        <button type="submit">ENVIAR</button>
-      </form>
+      <div className={styles.secsquare}>
+        <div className={styles.formulario}>
+          <h1>Nova Movimentação</h1>
+          <form onSubmit={handleSubmit} className={styles.form}>
+            <input
+              type="text"
+              placeholder="Digite o Titulo"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+            <input
+              type="text"
+              placeholder="Digite a Descrição"
+              value={description}
+              onChange={(e) => setDescription(e.target.value)}
+            />
+            <input
+              type="number"
+              placeholder="Digite o Valor"
+              value={value}
+              onChange={(e) => setValue(e.target.value)}
+            />
+            <select
+              value={transactionType}
+              onChange={(e) => setTransactionType(e.target.value)}
+            >
+              <option value="INCOME">Entrada</option>
+              <option value="EXPENSE">Saída</option>
+            </select>
+            <button type="submit">ENVIAR</button>
+          </form>
+        </div>
+      </div>
+
+
+
     </div>
   );
 }
